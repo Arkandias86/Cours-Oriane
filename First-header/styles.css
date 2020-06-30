@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    width: 1435px;
+    height: 745px;
+}
+
+.top-page {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    height: 80px;
+}
+
+.logo {
+    display: flex;
+    height: auto;
+    margin-left: 75px;
+}
+
+.logo > img {
+    max-width: 117px;
+}
+
+.container-menu-sign {
+    border: 1px solid red;
+    display: flex;
+}
+
+.menu {
+    margin-right: 550px;
+}
+
+.menu > li {
+    display: inline;
+    margin-right: 10px;
+}
