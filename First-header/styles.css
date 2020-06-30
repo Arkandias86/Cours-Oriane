@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "font-icons";
+    src: url("assets/font-icons.woff") format('woff');
+}
+
 .page {
     width: 1435px;
     height: 745px;
@@ -66,10 +71,15 @@
     margin-top: 300px;
 }
 
+h1 {
+    font-family: font-icons;
+    font-size: 70px;
+}
+
 .end-page {
     align-items: flex-end;
     height: 80px;
     background-color: white;
-    margin-bottom: 0px;
+    margin-top: 172px;
 }
 
