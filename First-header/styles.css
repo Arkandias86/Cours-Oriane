@@ -9,6 +9,7 @@
     height: 745px;
     background-image: url(assets/background\ image.jpg);
     background-size: cover;
+    border: 1px solid red;
 }
 
 .top-page {
@@ -60,4 +61,15 @@
     position: relative;
 }
 
+.title-and-email {
+    text-align: center;
+    margin-top: 300px;
+}
+
+.end-page {
+    align-items: flex-end;
+    height: 80px;
+    background-color: white;
+    margin-bottom: 0px;
+}
 
