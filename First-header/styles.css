@@ -7,13 +7,15 @@
 .page {
     width: 1435px;
     height: 745px;
+    background-image: url(assets/background\ image.jpg);
+    background-size: cover;
 }
 
 .top-page {
     border: 1px solid red;
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: white;
     height: 80px;
 }
 
@@ -28,6 +30,7 @@
 }
 
 .container-menu-sign {
+    margin-top: 20px;
     border: 1px solid red;
     display: flex;
 }
@@ -36,7 +39,25 @@
     margin-right: 550px;
 }
 
-.menu > li {
-    display: inline;
-    margin-right: 10px;
+.button {
+    margin-right: 20px;
 }
+
+.menu > li,
+.span {
+    display: inline;
+    margin-right: 20px;
+}
+
+.dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.home-menu {
+    position: relative;
+}
+
+
