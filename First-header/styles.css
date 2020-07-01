@@ -5,20 +5,28 @@
 }
 
 @font-face {
-    font-family: "font-icons";
-    src: url("assets/font-icons.woff") format('woff');
+    font-family: 'font-icons';
+    src: url('assets/font-icons.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'lined-icons';
+    src: url('assets/lined-icons.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'simple-line-icons';
+    src: url('assets/Simple-Line-Icons.woff') format('woff');
 }
 
 .page {
-    width: 1435px;
+    width: 100%;
     height: 745px;
     background-image: url(assets/background\ image.jpg);
     background-size: cover;
-    border: 1px solid red;
 }
 
 .top-page {
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -27,7 +35,7 @@
 
 .logo {
     display: flex;
-    height: auto;
+    margin: auto;
     margin-left: 75px;
 }
 
@@ -36,35 +44,73 @@
 }
 
 .container-menu-sign {
-    margin-top: 20px;
-    border: 1px solid red;
     display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
-    margin-right: 550px;
+    position: absolute;
+    display: inline-flex;
+}
+
+.menu a {
+    color: #525975;
+    font-size: 1.1em;
+}
+
+.menu > li:hover {
+    color: #1C85E8;
+}
+
+.dropdown > a > img {
+    margin-left: 7px;
 }
 
 .button {
-    margin-right: 20px;
+    display: inline-flex;
+    margin: auto;
+    margin-right: 5px;
 }
 
-.menu > li,
-.span {
-    display: inline;
-    margin-right: 20px;
+#sign-in-icon {
+    font-family: 'lined-icons';
+    margin-right: 75px;
 }
 
-.dropdown {
+#sign-in-icon:before {
+    content: "\E095";
+}
+
+li{
+    display:block;
+    list-style-type:none;
+    margin-right: 30px;
+}
+
+li a{
+    display:flex;
+    text-align:center;
+    text-decoration:none;
+}
+
+.studio-menu {
+    display: none;
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
 }
 
-.home-menu {
-    position: relative;
+.menu li:hover > ul {
+    display:block;
 }
+
+.studio-menu li{
+      display:flex;
+}
+
+.dropdown > a:after{
+    transform: rotate(-90deg);
+  }
 
 .title-and-email {
     text-align: center;
@@ -72,7 +118,7 @@
 }
 
 h1 {
-    font-family: font-icons;
+    font-family: 'font-icons';
     font-size: 70px;
 }
 
