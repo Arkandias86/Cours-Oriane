@@ -132,19 +132,25 @@ li a{
 
 .form {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-color: white;
     width: 600px;
     margin-left: 30%;
     text-align: center;
+    margin-top: 40px;
 }
 
 .form-row {
-    padding-top: 30px;
+    display: flex;
+    width: 400px;
+}
+
+#email {
+    width: 400px;
 }
 
 .form-submit {
-    padding-top: 30px;
+    display: flex;
 }
 
 h1 {
