@@ -3,54 +3,47 @@
     <head>
         <meta charset="UTF-8">
         <title>Design Studio</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="page">
-            <header class="top-page">
-                <div class="container-menu-sign">
-                    <div class="logo"><img src="assets/logo.png"></div>
-                    <ul class="menu">
-                        <li id="home"><a href="#">Home</a></li>
-                        <li class="dropdown"><a href="#">Studio<img src="assets/angle-down-solid.svg" 
-                            alt="angle dows" width="7px"></a>
-                            <ul class="studio-menu">
-                                <li><a href="#">Minsk Belarus Studio</a></li>
-                                <li><a href="#">Malibu Dream Airstream</a></li>
-                                <li><a href="#">Modern Condo In City</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Contact</a></li>
+        <header class="top-page">
+            <div class="logo"><img src="assets/logo.png"></div>
+            <ul class="menu">
+                <li id="home"><a href="#">Home</a></li>
+                <li class="dropdown"><a href="#">Studio<img src="assets/angle-down-solid.svg" 
+                    alt="angle dows" width="7px"></a>
+                    <ul class="studio-menu">
+                        <li><a href="#">Minsk Belarus Studio</a></li>
+                        <li><a href="#">Malibu Dream Airstream</a></li>
+                        <li><a href="#">Modern Condo In City</a></li>
                     </ul>
-                <div class="button">Sign In</div>
-                <span id="sign-in-icon"></span>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="button">Sign In<span id="sign-in-icon"></span></div>
+        </header>
+        <div class="home-page">
+            <div class="title">
+                <h1>Design Studio.</h1>
+                <p>Sell your home to us and skip the hassle of<br>
+                repairs, showing and months of uncertainty</p>
             </div>
-            </header>
-            <div class="home-page">
-                <div class="title-and-email">
-                    <h1>Design Studio.</h1>
-                    <p>Sell your home to us and skip the hassle of<br>
-                    repairs, showing and months of uncertainty</p>
-                    <div class="form">
-                        <div class='form-row'>
-                            <label for='email'></label>
-                            <input id='email'
-                                name='email'
-                                type='email'
-                                placeholder='Enter your Email Address'/>
-                        </div>
-                        <div class='form-submit'>
-                            <button>Submit</button>
-                        </div>
-                    </div>
-            </div>
-            </div>
-            <footer class="end-page">
-                <div class="end">
+            <div class="form">
+                <div class='form-row'>
+                    <label for='email'></label>
+                    <input id='email'
+                        name='email'
+                        type='email'
+                        placeholder='Enter your Email Address'/>
                 </div>
-            </footer>
+                <div class='form-submit'>
+                    <button>Submit</button>
+                </div>
+            </div>
         </div>
+        <footer class="end-page">
+        </footer>
     </body>
 </html>
