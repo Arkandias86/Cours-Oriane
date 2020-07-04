@@ -121,7 +121,7 @@ li a {
 .studio-menu li {
       display:flex;
       padding : 24px 10px 12px 15px;
-}
+  }
 
 .menu li:hover > ul {
     display:block;
