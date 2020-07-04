@@ -24,6 +24,10 @@ body {
     background-position: center center;
 }
 
+body.js-stop-transition * { 
+    transition:none !important; 
+}
+
 .top-page {
     display: flex;
     align-items: center;
@@ -90,21 +94,23 @@ li a {
 
 .studio-menu li {
     display:flex;
-    padding : 24px 10px 12px 15px;
+    padding : 24px 10px 7px 15px;
 }
 
 .studio-menu {
-    display: none;
+    visibility: hidden;
     position: absolute;
-    margin-top: 44px;
+    transition: 1s;
+    margin-top: 36px;
     background-color: rgb(255, 255, 255);
-    height: 200px;
+    height: 170px;
     flex-direction: column;
 }
 
 
 .menu li:hover > ul {
-    display:block;
+    visibility: visible;
+    transition: opacity 0.5s;
 }
 
 .home-page {
@@ -123,7 +129,18 @@ li a {
 
 .title h1 {
     font-weight: bold;
-    font-size: 80px;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    top: -50px;
+    font-size: 70px;
+    text-shadow: -1px 3px 5px rgb(141, 141, 141);
+}
+
+.title p {
+    position: relative;
+    top: -30px;
+    color: rgb(241, 241, 241);
+    font-size: 18px;
 }
 
 .end-page {
