@@ -48,6 +48,7 @@ body.js-stop-transition * {
 
 #sign-in-icon:before {
     content: "\E095";
+    margin-left: 5px;
 }
 
 .logo {
@@ -151,6 +152,26 @@ li a {
 .end-page {
     height: 80px;
     background-color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-row {
+    width: 700px;
+    height: 60px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.form-row #email {
+    width: 650px;
+    height: 60px;
+    border-radius: 2px;
+    border-style: none;
+    padding: 25px;
 }
 
 
