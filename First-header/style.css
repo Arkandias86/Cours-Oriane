@@ -153,7 +153,7 @@ li a {
 .form {
     display: flex;
     flex-direction: row;
-    margin-left: 130px;
+    width: 650px;
 }
 
 .form-row {
@@ -172,10 +172,13 @@ li a {
     padding: 25px;
 }
 
-.form-submit button{
+.form-submit {
     position: relative;
     left: -150px;
-    top: 16px;
+    top: 16px; 
+}
+
+.form-submit button{
     height: 30px;
     width: 134px;
     background-color: #3f424e;
@@ -193,7 +196,7 @@ li a {
     background-color: white;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
     body {
         background-image: none;
         height: 800px;
