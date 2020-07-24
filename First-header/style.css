@@ -157,6 +157,7 @@ li a {
 }
 
 .form-row {
+    display: flex;
     width: 700px;
     height: 60px;
     border-radius: 3px;
@@ -164,6 +165,7 @@ li a {
 }
 
 .form-row #email {
+    display: flex;
     font-size: 16px;
     width: 650px;
     height: 60px;
@@ -200,11 +202,42 @@ li a {
     body {
         background-image: none;
         height: 800px;
+        min-width: 400px;
     }
 
     .home-page {
         background-image: url(assets/background\ image.jpg);
         background-size: auto 100%;
         background-position: center;
+    }
+
+    .title h1 {
+        font-size: 10vw;
+    }
+
+    .title p {
+        font-size: 2.6vw;
+    }
+
+    .form-submit {
+        left: -15.7vw;
+        top: 2.1vh; 
+        flex: auto;
+    }
+
+    .form-row {
+        flex: auto;
+    }
+
+    .form-row #email {
+        flex: auto;
+    }
+
+    .form {
+        flex: auto;
+    }
+
+    .menu {
+        display: none;
     }
   }
