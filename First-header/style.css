@@ -153,7 +153,6 @@ li a {
 .form {
     display: flex;
     flex-direction: row;
-    max-width: 650px;
     width: 100%;
     height: 60px;
 }
@@ -209,7 +208,7 @@ li a {
     body {
         background-image: none;
         height: 800px;
-        min-width: 400px;
+        min-width: 375px;
     }
 
     .home-page {
@@ -218,33 +217,30 @@ li a {
         background-position: center;
     }
 
+    .title {
+        min-width: 281px;
+    }
+
     .title h1 {
-        font-size: 10vw;
+        font-size:calc(10px + 8vw);
     }
 
     .title p {
-        font-size: 2.6vw;
-    }
-
-    .form-submit {
-        left: -15.7vw;
-        top: 2.1vh; 
-        flex: auto;
-    }
-
-    .form-row {
-        /*flex: auto; */
-    }
-
-    .form-row #email {
-        /*flex: auto;*/
-    }
-
-    .form {
-        /*flex: auto;*/
+        font-size:calc(7px + 1.4vw);
     }
 
     .menu {
         display: none;
     }
+  }
+
+  @media only screen and (max-width: 400px) {
+      .form {
+          flex-direction: column;
+      }
+
+      .form-submit {
+          display: flex;
+          justify-content: center;
+      }
   }
