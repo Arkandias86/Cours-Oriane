@@ -252,9 +252,9 @@ li a {
         margin-left: 1.25em;
     }
 
-    #hide-menu-icon:hover + .menu {
+    /*#hide-menu-icon:hover + .menu {
         display: block;
-    }
+    }doesn't work */
 
     .form-submit button {
         background-color: #1C85E8;
